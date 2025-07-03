@@ -1,7 +1,7 @@
-# Domain Specific Llama SFT for Generative AI Q&A.<br>(AWS ASEAN LLM League 2025) - Updating...
+# Domain-Specific Llama SFT for Generative AI Q&A (Updating...)
 
 ## About this Project
-This project, "Domain-Specific Llama SFT for Generative AI Q&A" was developed following my participation in the **AWS ASEAN LLM League 2025**, an enriching experience hosted by AISingapore and AWS for the ASEAN regions.
+This project, **Domain-Specific Llama SFT for Generative AI Q&A** was developed following my participation in the **AWS ASEAN LLM League 2025**, an enriching experience hosted by **AI Singapore** and AWS for the ASEAN regions.
 
 The core objective of this initiative is to demonstrate the effectiveness of Supervised Fine-Tuning (SFT) on a Llama model to create a highly specialized generative AI Q&A system for a specific domain.
 
