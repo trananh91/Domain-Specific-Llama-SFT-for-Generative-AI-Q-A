@@ -32,6 +32,6 @@ For in-depth information on each phase, please refer to the dedicated documentat
 - Deployment of the fine-tuned model as an API service.
 
 ## Acknowledgments
-- AWS ASEAN LLM League 2025: For providing the inspiration and framework for this project.
-- AI Singapore & AWS: Hosts of the LLM League.
-- Nebius AI: For providing the platform for efficient model fine-tuning.
+- **AWS ASEAN LLM League 2025**: For providing the inspiration and framework for this project.
+- **AI Singapore** & **AWS**: Hosts of the LLM League.
+- **Nebius AI**: For providing the platform for efficient model fine-tuning.
