@@ -45,8 +45,9 @@ The raw collected and synthetically generated data underwent a meticulous cleani
         * Identifying and handling outliers (e.g., extremely short or excessively long sequences) that might negatively impact training stability or efficiency. The outlier ones are then grouped by two groups:
             * Extremely short: These outliers are refined to have longer, more detailed answers.
             * Excessively long: These outliers are refined to have shorter, more concise answers.
-            * Example: ![Example](data_prep/token_distribution_analysis_example.png)
         * Informing decisions regarding optimal *max_input_length* hyperparameter, ensuring efficient batching and memory utilization during fine-tuning.
+    * Example:  
+        ![Example](token_distribution_analysis_example.png)
 
 4.  **Quality Curation and Validation:**
     * Beyond automated cleaning, the dataset underwent a **careful curation** process, including using another LLM for fact-checking.
