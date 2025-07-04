@@ -2,12 +2,14 @@
 
 This document details the data preparation phase of the **Domain-Specific Llama SFT for Generative AI Q&A** project.
 
+---
+
 ## Data Sources and Collection Strategy
 
 Our data collection strategy involved a dual approach to ensure comprehensive coverage and diversity within four key sub-topics in Generative AI: Prompt Engineering, Foundation Models, Agentic AI, and Responsible AI. This approach allowed for both leveraging existing knowledge and addressing specific content gaps.
 
 1.  **Publicly Curated Datasets:**
-    * We integrated a small number of relevant Q&A pairs from high-quality publicly available datasets used for SFT.
+    * I integrated a small number of relevant Q&A pairs from high-quality publicly available datasets used for SFT.
     * Sources included Hugging Face Datasets.
     * The selection criteria focused on data relevance, diversity of topics, and factual accuracy.
 
@@ -28,7 +30,7 @@ The raw collected and synthetically generated data underwent a meticulous cleani
 
 1.  **Format Validation and Transformation:**
     * All data was consistently transformed into a Question-Answer pair with JSONL format, aligning with the expected input structure for supervised fine-tuning of Llama models.
-    * We implemented checks to ensure each entry adhered to the required schema and data types.
+    * I implemented checks to ensure each entry adhered to the required schema and data types.
     * A JSONL-formatted example, where the "instruction" key is for the Question, the "response" key is for the Answer and the "context" provides additional context (optional): 
     ```json
     {"instruction": "What are the key ethical principles that should guide the development of responsible AI systems?", "context":"", "response":"Responsible AI development should be guided by principles including transparency, fairness, accountability, privacy protection, human oversight, non-maleficence (avoiding harm), beneficence (promoting good), and respect for human autonomy. These principles ensure AI systems serve humanity's best interests while minimizing potential risks."}
@@ -38,26 +40,15 @@ The raw collected and synthetically generated data underwent a meticulous cleani
     * Leading/trailing whitespace was consistently trimmed from all text fields.
 
 3.  **Token Distribution Analysis:**
-    * We conducted **analysis of token distribution** across the entire dataset. This involved examining the length of questions and answers in terms of tokens.
+    * I conducted **analysis of token distribution** across the entire dataset. This involved examining the length of questions and answers in terms of tokens.
     * This analysis helped in:
-        * Identifying and handling outliers (e.g., extremely short or excessively long sequences) that might negatively impact training stability or efficiency.
-        * Informing decisions regarding optimal maximum sequence lengths for tokenization, ensuring efficient batching and memory utilization during fine-tuning.
+        * Identifying and handling outliers (e.g., extremely short or excessively long sequences) that might negatively impact training stability or efficiency. The outlier ones are then grouped by two groups:
+            * Extremely short: These outliers are refined to have longer, more detailed answers.
+            * Excessively long: These outliers are refined to have shorter, more concise answers.
+            * Example: ![Example](data_prep/token_distribution_analysis_example.png)
+        * Informing decisions regarding optimal *max_input_length* hyperparameter, ensuring efficient batching and memory utilization during fine-tuning.
 
-4.  **Deduplication:**
-    * Robust deduplication strategies were applied at the Q&A pair level to eliminate redundant examples. This prevents the model from simply memorizing identical inputs and ensures that each training example contributes unique information, leading to better generalization.
-
-5.  **Quality Curation and Validation:**
-    * Beyond automated cleaning, the dataset underwent a **careful curation** process, including a sampling-based manual review.
-    * This human validation step was crucial for verifying the factual accuracy, contextual relevance, and overall linguistic quality of a representative subset of the data, especially for synthetically generated examples.
-    * Inconsistencies, factual errors, or low-quality examples identified during this phase were either corrected or removed from the dataset.
-
----
-
-## Dataset Statistics
-
-After comprehensive preprocessing, the final dataset comprised a substantial number of high-quality Q&A pairs, ready for model fine-tuning.
-
-* **Total number of unique Q&A pairs:** [Insert actual number, e.g., "Approximately 180,000"]
-* **Average question length:** [Insert actual number, e.g., "25 tokens"]
-* **Average answer length:** [Insert actual number, e.g., "90 tokens"]
-* **Vocabulary size (after tokenization with Llama's tokenizer):** [Insert actual number, e.g., "65,000 unique tokens"]
+4.  **Quality Curation and Validation:**
+    * Beyond automated cleaning, the dataset underwent a **careful curation** process, including using another LLM for fact-checking.
+    * This validation step was crucial for verifying the factual accuracy, contextual relevance, and overall linguistic quality of a representative subset of the data, especially for synthetically generated examples.
+    * Inconsistencies, factual errors, or low-quality examples identified during this phase were refined to be correct.
