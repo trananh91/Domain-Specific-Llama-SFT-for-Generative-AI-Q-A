@@ -43,8 +43,6 @@ The LLM-as-a-Judge evaluation demonstrated **significant qualitative improvement
 * **Optimal Level of Detail:** The fine-tuned model showed a better ability to provide an appropriate level of detail, avoiding overly simplistic answers while also being more concise than the base model when extensive detail was not required.
 * **Stronger Domain Alignment:** The language, terminology, and contextual understanding in the fine-tuned model's responses were significantly more aligned with the Generative AI domain, making the answers more relevant and useful to domain experts.
 
-[Optional: You might add a small example here comparing a base model output vs. fine-tuned model output on a specific question, followed by a brief GPT-4.1 assessment, if you have one readily available and it doesn't make the document too long.]
-
 
 ## Limitations of LLM-as-a-Judge
 
