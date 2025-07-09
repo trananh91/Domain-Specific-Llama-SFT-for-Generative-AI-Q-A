@@ -31,9 +31,9 @@ The raw collected and synthetically generated data underwent a meticulous cleani
 
 1.  **Format Validation and Transformation:**
     * All data was consistently transformed into a Question-Answer pair using the JSONL format, aligning with the expected input structure for Llama model SFT.
-    * A JSONL-formatted example, where "instruction" is for the Question, "response" for the Answer, and "context" provides optional additional context:
+    * A JSONL-formatted example, where `"prompt"` is for the Question, `"completion"` for the Answer.
     ```json
-    {"instruction": "What are the key ethical principles that should guide the development of responsible AI systems?", "context":"", "response":"Responsible AI development should be guided by principles including transparency, fairness, accountability, privacy protection, human oversight, non-maleficence (avoiding harm), beneficence (promoting good), and respect for human autonomy. These principles ensure AI systems serve humanity's best interests while minimizing potential risks."}
+    {"prompt": "What are the key ethical principles that should guide the development of responsible AI systems?", "completion": "Responsible AI development should be guided by principles including transparency, fairness, accountability, privacy protection, human oversight, non-maleficence (avoiding harm), beneficence (promoting good), and respect for human autonomy. These principles ensure AI systems serve humanity's best interests while minimizing potential risks."}
 
 2.  **Special Token and Artifact Removal:**
     * A critical step involved **removing special tokens, control characters, and extraneous markdown/HTML artifacts** (e.g., `\n`, `\t`, `[CLS]`, `[SEP]`, `<a>` tags, or excessive punctuation) that could introduce noise or misinterpretations during training.
