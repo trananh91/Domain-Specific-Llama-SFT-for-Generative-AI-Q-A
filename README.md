@@ -17,6 +17,8 @@ This project is organized into distinct phases, each with its dedicated document
 * **Model Fine-Tuning:** The core process of adapting the Llama model.
 * **Evaluation:** Assessing the performance of the fine-tuned model.
 
+**Script for Fine-tuning**: [Notebook](./SFT_notebook.ipynb)
+
 ---
 
 ## Detailed Documented Sections
