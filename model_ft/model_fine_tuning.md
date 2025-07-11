@@ -46,8 +46,9 @@ LoRA is a Parameter-Efficient Fine-Tuning (PEFT) technique that injects small, t
 
 ## Training Process & Monitoring
 
-The fine-tuning process was closely monitored using Nebius AI's integrated logging and experiment tracking tools.
+The fine-tuning process was closely monitored using Nebius AI's integration with Weights & Biases.
 
 * **Loss Curves:** Training and validation loss were tracked across epochs to visualize convergence behavior and identify signs of overfitting.
 * **Metrics:** Perplexity on the validation set was monitored as an indicator of the model's generalization ability.
+* **Hyperparameters:** Key hyperparameters such as learning rate and number of epochs were consistently tracked and logged in Weights & Biases for comprehensive experiment management and reproducibility.
 * **Model Checkpointing:** Regular checkpoints of the fine-tuned model were saved, allowing for recovery from interruptions and selection of the best-performing model based on validation metrics.
