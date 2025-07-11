@@ -29,10 +29,6 @@ The LLM-as-a-Judge evaluation focused on the following key qualitative criteria,
     * **Definition:** Evaluates whether the response provides a complete and holistic answer to the question, covering all necessary aspects without being overly verbose.
     * **Assessment:** GPT-4.1 judged if the answer adequately addressed all parts of the query and provided sufficient information for a thorough understanding.
 
-3.  **Level of Detail:**
-    * **Definition:** Assesses the depth and specificity of the information provided in the response. Does it offer sufficient detail for a domain-specific query, or is it too general?
-    * **Assessment:** GPT-4.1 determined if the response offered appropriate granularity for the question, providing specific examples or elaborations where required by the context.
-
 
 ## Results and Qualitative Improvements
 
