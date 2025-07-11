@@ -1,4 +1,4 @@
-# Domain-Specific Llama SFT for Generative AI Q&A (Updating...)
+# Domain-Specific Llama SFT for Generative AI Q&A
 
 ## About this Project
 This project, **Domain-Specific Llama SFT for Generative AI Q&A** was developed following my participation in the **AWS ASEAN LLM League 2025**, an enriching experience hosted by **AI Singapore** and **AWS** for the ASEAN regions.
@@ -17,7 +17,7 @@ This project is organized into distinct phases, each with its dedicated document
 * **Model Fine-Tuning:** The core process of adapting the Llama model.
 * **Evaluation:** Assessing the performance of the fine-tuned model.
 
-**Notebook for Model Fine-tuning**: [Notebook](./SFT_notebook.ipynb)
+**Notebook for Model Fine-tuning**: [Notebook](./SFT_notebook.ipynb)  
 **Scripts for Model Fine-tuning, LLM-as-a-Judge Implementation and Evaluation**: [Scripts](./scripts)
 
 ---
