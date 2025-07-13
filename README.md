@@ -10,6 +10,9 @@ The AWS ASEAN LLM League competition centers around fine-tuning models with AWS 
 ---
 
 ## Project Structure & Workflow
+
+![Workflow](fine_tuning_workflow.png)  
+
 This project is organized into distinct phases, each with its dedicated documentation:
 
 * **Initial Research:** Understanding the problem space and laying the groundwork.
