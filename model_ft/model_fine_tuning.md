@@ -11,7 +11,7 @@ This document details the process of fine-tuning a Llama model for domain-specif
 
 ## Fine-Tuning Environment: Nebius AI
 
-The fine-tuning process was conducted on **Nebius AI**, a powerful and scalable platform for machine learning workloads. This environment was chosen for its capabilities in handling large-scale model training and its efficient resource management.
+The fine-tuning process was conducted using **Nebius AI**, a powerful and scalable platform for machine learning workloads. This environment was chosen for its capabilities in handling large-scale model training and its efficient resource management.
 
 
 ## Fine-Tuning Strategy: LoRA-based Supervised Fine-Tuning (SFT)
@@ -23,7 +23,7 @@ LoRA is a Parameter-Efficient Fine-Tuning (PEFT) technique that injects small, t
 
 ### Key Aspects of SFT with LoRA:
 
-1.  **Dataset Integration:** The custom, meticulously prepared JSONL dataset (as detailed in `data_preparation.md`) was formatted to align with Llama's instruction-tuning schema (e.g., `"[INST] {instruction}\n{context} [/INST] {response}"`).
+1.  **Dataset Integration:** The custom, meticulously prepared JSONL dataset (as detailed in `data_preparation.md`) was formatted to align with Llama's instruction-tuning schema (e.g., `"[INST] {prompt} [/INST] {completion}"`).
 2.  **Tokenizer Alignment:** The tokenizer corresponding to the Llama 3.1 8B model was used to ensure consistent tokenization between pre-training and fine-tuning.
 3.  **Model Adaptation:** LoRA layers were strategically added to the attention and feed-forward modules of the Llama model, allowing for efficient adaptation to the new domain.
 
