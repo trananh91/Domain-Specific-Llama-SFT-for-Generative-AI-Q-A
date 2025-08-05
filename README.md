@@ -19,9 +19,13 @@ This project is organized into distinct phases, each with its dedicated document
 * **Data Preparation:** Curating and processing the domain-specific dataset.
 * **Model Fine-Tuning:** The core process of adapting the Llama model.
 * **Evaluation:** Assessing the performance of the fine-tuned model.
+* **Model Inference:** Performing inference and preparing the merged model for further deployment (vLLM,...).
+
+<br>
 
 **Notebook for Model Fine-tuning**: [Notebook](./SFT_notebook.ipynb)  
-**Scripts for Model Fine-tuning, LLM-as-a-Judge Implementation and Evaluation**: [Scripts](./scripts)
+**Scripts for Model Fine-tuning, LLM-as-a-Judge Implementation and Evaluation**: [Scripts](./scripts)  
+**Notebook for Model Inference:**: [Notebook](./ft_model_inference/ft_model_inference.ipynb)
 
 ---
 
@@ -32,6 +36,7 @@ For in-depth information on each phase, please refer to the dedicated documentat
 * **Data Preparation:** [Read more](./data_prep/data_preparation.md)
 * **Model Fine-Tuning:** [Read more](./model_ft/model_fine_tuning.md)
 * **Evaluation:** [Read more](./eval/evaluation.md)
+* **Model Inference:** [Read more](./ft_model_inference/ft_model_inference.md)
 
 ## Future work
 - Exploring different models for optimal performance.
