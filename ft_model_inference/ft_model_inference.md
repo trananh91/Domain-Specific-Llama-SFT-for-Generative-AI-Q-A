@@ -12,7 +12,12 @@ This guide explains how to prepare and merge a fine-tuned LoRA adapter into the 
     ```text
     lora_adapter/
     ├── adapter_model.safetensors
-    └── adapter_config.json
+    ├── adapter_config.json
+    ├── chat_template.jinja
+    ├── checkpoint.meta
+    ├── special_tokens_map.json
+    ├── tokenizer.json
+    └── tokenizer_config.json
     ```
 
 - The outer folder (`lora_adapter/`) must contain both files.  
