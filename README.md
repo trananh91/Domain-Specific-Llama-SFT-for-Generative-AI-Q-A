@@ -3,9 +3,9 @@
 ## About this Project
 This project, **Domain-Specific Llama SFT for Generative AI Q&A** was developed following my participation in the **AWS ASEAN LLM League 2025**, an enriching experience hosted by **AI Singapore** and **AWS** for the ASEAN regions.
 
-The core objective of this initiative is to demonstrate the effectiveness of Supervised Fine-Tuning (SFT) on a Llama model to create a highly specialized generative AI Q&A system for a specific domain.
+The core objective of this initiative is to demonstrate the effectiveness of Supervised Fine-Tuning (SFT) on a Llama model to create a highly specialized Q&A system within the domain of generative AI sub-topics.
 
-The AWS ASEAN LLM League competition centers around fine-tuning models with AWS services. For my project, however, I'm exploring and utilizing Nebius AI for this purpose.
+The AWS ASEAN LLM League competition centers around fine-tuning models with AWS services. For my project, however, I'm exploring and utilizing [Nebius AI Studio](https://studio.nebius.ai/) for this purpose.
 
 ---
 
@@ -45,4 +45,4 @@ For in-depth information on each phase, please refer to the dedicated documentat
 ## Acknowledgments
 - **AWS ASEAN LLM League 2025**: For providing the inspiration and framework for this project.
 - **AI Singapore** & **AWS**: Hosts of the LLM League.
-- **Nebius AI**: For providing the platform for efficient model fine-tuning.
+- **Nebius AI Studio**: For providing the platform for efficient model fine-tuning.
