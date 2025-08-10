@@ -2,7 +2,7 @@
 
 This guide explains how to prepare and merge a fine-tuned LoRA adapter into the base **LLaMA 3 model**, and save the final model in **Hugging Face Transformers format**, ready for inference with tools like **vLLM**.
 
-**Complete Notebook for Model Inference:** [Notebook](./ft_model_inference.ipynb)
+**Complete Notebook for Model Inference:** [Notebook](/ft_model_inference/ft_model_inference.ipynb)
 
 ## Step 1: Prepare the LoRA Adapter
 
