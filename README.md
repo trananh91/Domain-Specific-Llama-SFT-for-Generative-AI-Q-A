@@ -32,11 +32,11 @@ This project is organized into distinct phases, each with its dedicated document
 ## Detailed Documented Sections
 For in-depth information on each phase, please refer to the dedicated documentation files:
 
-* **Initial Research:** [Read more](./docs/research/initial_research.md)
-* **Data Preparation:** [Read more](./docs/data_prep/data_preparation.md)
-* **Model Fine-Tuning:** [Read more](./docs/model_ft/model_fine_tuning.md)
-* **Evaluation:** [Read more](./docs/eval/evaluation.md)
-* **Model Inference:** [Read more](./docs/model_inference/ft_model_inference.md)
+* **Initial Research:** [Read more](./docs/research/README.md)
+* **Data Preparation:** [Read more](./docs/data_prep/README.md)
+* **Model Fine-Tuning:** [Read more](./docs/model_ft/README.md)
+* **Evaluation:** [Read more](./docs/eval/README.md)
+* **Model Inference:** [Read more](./docs/model_inference/README.md)
 
 ## Future work
 - Exploring different models for optimal performance.
