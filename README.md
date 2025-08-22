@@ -23,7 +23,7 @@ This project is organized into distinct phases, each with its dedicated document
 
 <br>
 
-**Notebook for Model Fine-tuning**: [Notebook](./SFT_notebook.ipynb)  
+**Notebooks for Model Fine-tuning (Using NebiusAI or UnslothAI)**: [Notebook](./SFT_notebooks/)  
 **Scripts for Model Fine-tuning, LLM-as-a-Judge Implementation and Evaluation**: [Scripts](./scripts)  
 **Notebook for Model Inference:**: [Notebook](./ft_model_inference/ft_model_inference.ipynb)
 
@@ -32,11 +32,11 @@ This project is organized into distinct phases, each with its dedicated document
 ## Detailed Documented Sections
 For in-depth information on each phase, please refer to the dedicated documentation files:
 
-* **Initial Research:** [Read more](./docs/research/README.md)
-* **Data Preparation:** [Read more](./docs/data_prep/README.md)
-* **Model Fine-Tuning:** [Read more](./docs/model_ft/README.md)
-* **Evaluation:** [Read more](./docs/eval/README.md)
-* **Model Inference:** [Read more](./docs/model_inference/README.md)
+* **Initial Research:** [Read more](./docs/research/)
+* **Data Preparation:** [Read more](./docs/data_prep/)
+* **Model Fine-Tuning:** [Read more](./docs/model_ft/)
+* **Evaluation:** [Read more](./docs/eval/)
+* **Model Inference:** [Read more](./docs/model_inference/)
 
 ## Future work
 - Exploring different models for optimal performance.
