@@ -23,7 +23,7 @@ This project is organized into distinct phases, each with its dedicated document
 
 <br>
 
-**Notebooks for Model Fine-tuning (Using NebiusAI or UnslothAI)**: [Notebook](./SFT_notebooks/)  
+**Notebooks for Model Fine-tuning (Using NebiusAI or UnslothAI)**: [Notebooks](./SFT_notebooks/)  
 **Scripts for Model Fine-tuning, LLM-as-a-Judge Implementation and Evaluation**: [Scripts](./scripts)  
 **Notebook for Model Inference:**: [Notebook](./ft_model_inference/ft_model_inference.ipynb)
 
@@ -46,3 +46,4 @@ For in-depth information on each phase, please refer to the dedicated documentat
 - **AWS ASEAN LLM League 2025**: For providing the inspiration and framework for this project.
 - **AI Singapore** & **AWS**: Hosts of the LLM League.
 - **Nebius AI Studio**: For providing the platform for efficient model fine-tuning.
+- **Unsloth AI**: For supporting model fine-tuning through their libraries, reference notebooks, and documentation.
